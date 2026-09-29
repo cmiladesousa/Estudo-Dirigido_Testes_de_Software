@@ -1,0 +1,11 @@
+1. Usar apenas try/except com print permite um falso positivo porque, se a função falhar em lançar o erro o bloco except é ignorado. Então, o PASSED significa apenas que o código rodou sem estourar exceções não tratadas no meio do teste.
+
+2. . O pytest.raises inspeciona o bloco de código esperando que uma exceção específica seja lançada. Se a função retornar normalmente sem estourar a exceção configurada, o pytest deve retornar FAILED.
+
+3. Um erro esperado é uma exceção lançada intencionalmente pelo programador para proteger o sistema contra estados inválidos. Já uma falha acidental é um bug, ocorrendo quando o site se comporta de maneira incorreta devido a erros de lógica do programador.
+
+4. Lança LivroInvalidoError e confere se o service retornou a mensagem "título obrigatório"
+
+5. Pois o repository é somente um dicionário, não realizando consultas, então ao testar esse código você está validando exclusivamente o service
+
+6. No unittest, você deve criar uma classe que herda de unittest.TestCase
